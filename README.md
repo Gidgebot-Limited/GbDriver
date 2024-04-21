@@ -1,6 +1,6 @@
 # GbDriver
 
-GbDriver is a .NET Core C# project using Selenium WebDriver, MSTest, and MailSlurp for monitoring test and behavior-driven development at Gidgebot.com.
+GbDriver is a .NET Core C# project using Selenium WebDriver, MSTest, MailSlurp, and Gherkin for monitoring test and behavior-driven development at Gidgebot.com.
 
 ## Table of Contents
 
