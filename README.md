@@ -1,6 +1,6 @@
 # GbDriver
 
-GbDriver is a .NET Core C# project using Selenium WebDriver, MSTest, and MailSlurp for monitoring test and behavior driven development at Gidgebot.com 
+GbDriver is a .NET Core C# project using Selenium WebDriver, MSTest, and MailSlurp for monitoring test and behavior-driven development at Gidgebot.com.
 
 ## Table of Contents
 
@@ -11,25 +11,26 @@ GbDriver is a .NET Core C# project using Selenium WebDriver, MSTest, and MailSlu
 - [Usage](#usage)
 - [Test Data](#test-data)
 - [Running Tests](#running-tests)
+- [SpecFlow Gherkin Syntax Integration](#specflow-gherkin-syntax-integration)
 - [Contributing](#contributing)
 
 ## Introduction
 
-GbDriver uses Selenium WebDriver for browser automation, MSTest for unit testing, and MailSlurp for email testing by scripting chrome browser actions and asserting test conditions.
+GbDriver uses Selenium WebDriver for browser automation, MSTest for unit testing, and MailSlurp for email testing by scripting Chrome browser actions and asserting test conditions.
 
 ## Prerequisites
 
-Prerequisites that need to have installed to run the project include:
+Prerequisites that need to be installed to run the project include:
 - Visual Studio 
 - .NET Core SDK 
 - MailSlurp account 
 
 ## Setup
 
-Clone the repository over https:
+Clone the repository over HTTPS:
 https://Gidgebot@dev.azure.com/Gidgebot/We%20Stand%20with%20George/_git/WebDriving%20Mit%20Gidgebot
 
-Clone the repository over ssh:
+Clone the repository over SSH:
 git@ssh.dev.azure.com:v3/Gidgebot/We%20Stand%20with%20George/WebDriving%20Mit%20Gidgebot
 
 ## Project Structure
@@ -40,15 +41,14 @@ git@ssh.dev.azure.com:v3/Gidgebot/We%20Stand%20with%20George/WebDriving%20Mit%20
     tasks.json
 GbDriver
     |
-    .gitattribues
+    .gitattributes
     .gitignore
     GbDriver.sln
     README.md <--it-me--<<<
 
 ## Usage
 
-These webdriver tests contain page objects which are hard coded to run against Gidgebot.com, and a supporting framework which can be used to
-maintain and compose chromedriver testing. 
+These webdriver tests contain page objects hardcoded to run against Gidgebot.com, and a supporting framework that can be used to maintain and compose ChromeDriver testing. 
 
 ## Test Data
 
@@ -56,7 +56,16 @@ The 'GbDriver/Test Data/' directory contains dummyUserData.csv and gbUserData.cs
 
 ## Running Tests
 
-Configure your Visual Studio application as an MSTest project and run in test explorer.
+Configure your Visual Studio application as an MSTest project and run in Test Explorer.
+
+## SpecFlow Gherkin Syntax Integration
+
+GbDriver also integrates SpecFlow with Gherkin syntax for writing feature tests. This allows for more expressive and readable tests that can be easily understood by non-technical stakeholders.
+
+To use SpecFlow with Gherkin syntax, follow these steps:
+1. Install the SpecFlow NuGet package.
+2. Write feature files using Gherkin syntax to describe test scenarios.
+3. Implement step definitions in C# to map Gherkin steps to automation code.
 
 ## Contributing
 
@@ -98,4 +107,3 @@ Please follow the coding style and guidelines used in the project. If unsure, re
 By contributing to this project, you agree to abide by the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 Thank you for contributing to make this project better!
-
